@@ -2,7 +2,7 @@
 //  Constants.swift
 //  Foodzy
 //
-//  Created by Hansa Anuradha on 2022-07-30.
+//  Created by Hansa Anuradha on 30/07/22.
 //
 
 import UIKit

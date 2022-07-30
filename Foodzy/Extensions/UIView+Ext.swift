@@ -2,7 +2,7 @@
 //  UIView+Ext.swift
 //  Foodzy
 //
-//  Created by Hansa Anuradha on 2022-07-30.
+//  Created by Hansa Anuradha on 30/07/22.
 //
 
 import UIKit
@@ -58,7 +58,7 @@ extension UIView {
             anchoredConstraints.height = heightAnchor.constraint(equalToConstant: size.height)
         }
         
-        [anchoredConstraints.top, anchoredConstraints.leading, anchoredConstraints.bottom, anchoredConstraints.trailing, anchoredConstraints.width, anchoredConstraints.height].forEach{ $0?.isActive = true }
+        [anchoredConstraints.top, anchoredConstraints.leading, anchoredConstraints.bottom, anchoredConstraints.trailing, anchoredConstraints.width, anchoredConstraints.height].forEach { $0?.isActive = true }
         
         return anchoredConstraints
     }
