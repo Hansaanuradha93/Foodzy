@@ -12,6 +12,7 @@
 		479D5AF028953057003B59D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 479D5AEF28953057003B59D0 /* Assets.xcassets */; };
 		479D5AF328953057003B59D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 479D5AF128953057003B59D0 /* LaunchScreen.storyboard */; };
 		479D5B032895358B003B59D0 /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D5B022895358B003B59D0 /* SigninVC.swift */; };
+		479D5B0A28958890003B59D0 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 479D5B0928958890003B59D0 /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		479D5AF228953057003B59D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		479D5AF428953057003B59D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		479D5B022895358B003B59D0 /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
+		479D5B0928958890003B59D0 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		479D5ADA28953055003B59D0 = {
 			isa = PBXGroup;
 			children = (
+				479D5B0928958890003B59D0 /* .swiftlint.yml */,
 				479D5AE528953055003B59D0 /* Foodzy */,
 				479D5AE428953055003B59D0 /* Products */,
 			);
@@ -114,7 +117,7 @@
 				479D5ADF28953055003B59D0 /* Sources */,
 				479D5AE028953055003B59D0 /* Frameworks */,
 				479D5AE128953055003B59D0 /* Resources */,
-				479D5AFF2895346D003B59D0 /* ShellScript */,
+				479D5B0828958764003B59D0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -163,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				479D5B0A28958890003B59D0 /* .swiftlint.yml in Resources */,
 				479D5AF328953057003B59D0 /* LaunchScreen.storyboard in Resources */,
 				479D5AF028953057003B59D0 /* Assets.xcassets in Resources */,
 			);
@@ -171,7 +175,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		479D5AFF2895346D003B59D0 /* ShellScript */ = {
+		479D5B0828958764003B59D0 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
