@@ -65,11 +65,11 @@
 		479D5AE528953055003B59D0 /* Foodzy */ = {
 			isa = PBXGroup;
 			children = (
+				479D5AFD289531EC003B59D0 /* Views */,
+				479D5AFE289531F5003B59D0 /* Controllers */,
+				479D5AFA289531C8003B59D0 /* Support Files */,
 				479D5B1028958A40003B59D0 /* Helpers */,
 				479D5B0B28958992003B59D0 /* Extensions */,
-				479D5AFE289531F5003B59D0 /* Controllers */,
-				479D5AFD289531EC003B59D0 /* Views */,
-				479D5AFA289531C8003B59D0 /* Support Files */,
 			);
 			path = Foodzy;
 			sourceTree = "<group>";

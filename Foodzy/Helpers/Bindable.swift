@@ -14,7 +14,7 @@ class Bindable<T> {
         didSet { observer?(value) }
     }
     
-    
+
     private var observer: ((T?) -> ())?
 }
 

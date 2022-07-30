@@ -21,17 +21,14 @@ extension UIView {
         self.clipsToBounds = true
     }
     
-    
     func setRoundedCorners(radius: CGFloat) {
         self.layer.cornerRadius = radius
         self.clipsToBounds = true
     }
     
-    
     func addSubviews(_ views: UIView...) {
         for view in views { addSubview(view) }
     }
-    
     
     @discardableResult
     func anchor(top: NSLayoutYAxisAnchor?, leading: NSLayoutXAxisAnchor?, bottom: NSLayoutYAxisAnchor?, trailing: NSLayoutXAxisAnchor?, padding: UIEdgeInsets = .zero, size: CGSize = .zero) -> AnchoredConstraints {
@@ -68,7 +65,6 @@ extension UIView {
         return anchoredConstraints
     }
     
-    
     func fillSuperview(padding: UIEdgeInsets = .zero) {
         translatesAutoresizingMaskIntoConstraints = false
         if let superviewTopAnchor = superview?.topAnchor {
@@ -87,7 +83,6 @@ extension UIView {
             trailingAnchor.constraint(equalTo: superviewTrailingAnchor, constant: -padding.right).isActive = true
         }
     }
-    
     
     func centerInSuperview(size: CGSize = .zero) {
         translatesAutoresizingMaskIntoConstraints = false
@@ -108,7 +103,6 @@ extension UIView {
         }
     }
     
-    
     func centerVerticallyInSuperView(padding: CGFloat = .zero, size: CGSize = .zero) {
         translatesAutoresizingMaskIntoConstraints = false
         if let superviewCenterYAnchor = superview?.centerYAnchor {
@@ -123,7 +117,6 @@ extension UIView {
             heightAnchor.constraint(equalToConstant: size.height).isActive = true
         }
     }
-    
     
     func centerHorizontallyInSuperView(padding: CGFloat = .zero, size: CGSize = .zero) {
         translatesAutoresizingMaskIntoConstraints = false
@@ -140,7 +133,6 @@ extension UIView {
         }
     }
     
-    
     func center(in view: UIView, size: CGSize = .zero) {
         translatesAutoresizingMaskIntoConstraints = false
         
@@ -156,7 +148,6 @@ extension UIView {
         }
     }
     
-    
     func centerHorizontally(in view: UIView, size: CGSize = .zero) {
         translatesAutoresizingMaskIntoConstraints = false
         
@@ -171,7 +162,6 @@ extension UIView {
         }
     }
     
-    
     func centerVertically(in view: UIView, size: CGSize = .zero) {
         translatesAutoresizingMaskIntoConstraints = false
         
@@ -185,7 +175,6 @@ extension UIView {
             heightAnchor.constraint(equalToConstant: size.height).isActive = true
         }
     }
-    
     
     @discardableResult
     func alignLeadingInSuperView(leading: NSLayoutXAxisAnchor?, paddingLeading: CGFloat = .zero) -> AnchoredConstraints {
@@ -202,7 +191,6 @@ extension UIView {
         return anchoredConstraints
     }
     
-    
     @discardableResult
     func alignTrailingInSuperView(trailing: NSLayoutXAxisAnchor?, paddingTrailing: CGFloat = .zero) -> AnchoredConstraints {
         translatesAutoresizingMaskIntoConstraints = false
@@ -218,12 +206,10 @@ extension UIView {
         return anchoredConstraints
     }
     
-    
     func setHeight(_ height: CGFloat) {
         translatesAutoresizingMaskIntoConstraints = false
         heightAnchor.constraint(equalToConstant: height).isActive = true
     }
-    
     
     func setWidth(_ width: CGFloat) {
         translatesAutoresizingMaskIntoConstraints = false
