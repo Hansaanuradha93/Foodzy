@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		479D5AE728953055003B59D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D5AE628953055003B59D0 /* AppDelegate.swift */; };
 		479D5AE928953055003B59D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D5AE828953055003B59D0 /* SceneDelegate.swift */; };
-		479D5AEB28953055003B59D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D5AEA28953055003B59D0 /* ViewController.swift */; };
-		479D5AEE28953055003B59D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 479D5AEC28953055003B59D0 /* Main.storyboard */; };
 		479D5AF028953057003B59D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 479D5AEF28953057003B59D0 /* Assets.xcassets */; };
 		479D5AF328953057003B59D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 479D5AF128953057003B59D0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,8 +17,6 @@
 		479D5AE328953055003B59D0 /* Foodzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodzy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		479D5AE628953055003B59D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		479D5AE828953055003B59D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		479D5AEA28953055003B59D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		479D5AED28953055003B59D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		479D5AEF28953057003B59D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		479D5AF228953057003B59D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		479D5AF428953057003B59D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +52,37 @@
 		479D5AE528953055003B59D0 /* Foodzy */ = {
 			isa = PBXGroup;
 			children = (
+				479D5AFE289531F5003B59D0 /* Controllers */,
+				479D5AFD289531EC003B59D0 /* Views */,
+				479D5AFA289531C8003B59D0 /* Support Files */,
+			);
+			path = Foodzy;
+			sourceTree = "<group>";
+		};
+		479D5AFA289531C8003B59D0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
 				479D5AE628953055003B59D0 /* AppDelegate.swift */,
 				479D5AE828953055003B59D0 /* SceneDelegate.swift */,
-				479D5AEA28953055003B59D0 /* ViewController.swift */,
-				479D5AEC28953055003B59D0 /* Main.storyboard */,
 				479D5AEF28953057003B59D0 /* Assets.xcassets */,
 				479D5AF128953057003B59D0 /* LaunchScreen.storyboard */,
 				479D5AF428953057003B59D0 /* Info.plist */,
 			);
-			path = Foodzy;
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		479D5AFD289531EC003B59D0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		479D5AFE289531F5003B59D0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +145,6 @@
 			files = (
 				479D5AF328953057003B59D0 /* LaunchScreen.storyboard in Resources */,
 				479D5AF028953057003B59D0 /* Assets.xcassets in Resources */,
-				479D5AEE28953055003B59D0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +155,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				479D5AEB28953055003B59D0 /* ViewController.swift in Sources */,
 				479D5AE728953055003B59D0 /* AppDelegate.swift in Sources */,
 				479D5AE928953055003B59D0 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +163,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		479D5AEC28953055003B59D0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				479D5AED28953055003B59D0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		479D5AF128953057003B59D0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +300,6 @@
 				INFOPLIST_FILE = Foodzy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +327,6 @@
 				INFOPLIST_FILE = Foodzy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
