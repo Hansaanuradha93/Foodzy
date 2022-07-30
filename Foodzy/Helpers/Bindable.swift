@@ -14,14 +14,13 @@ class Bindable<T> {
         didSet { observer?(value) }
     }
     
-
-    private var observer: ((T?) -> ())?
+    private var observer: ((T?) -> Void)?
 }
 
 // MARK: - Methods
 extension Bindable {
     
-    func bind(observer: @escaping (T?) -> ()) {
+    func bind(observer: @escaping (T?) -> Void) {
         self.observer = observer
     }
 }

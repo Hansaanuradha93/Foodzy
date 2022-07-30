@@ -11,7 +11,6 @@ struct AnchoredConstraints {
     var top, leading, bottom, trailing, width, height: NSLayoutConstraint?
 }
 
-
 extension UIView {
     
     func setRoundedBorder(borderColor: UIColor = .clear, borderWidth: CGFloat = 0, radius: CGFloat = 0) {
@@ -30,8 +29,7 @@ extension UIView {
         for view in views { addSubview(view) }
     }
     
-    @discardableResult
-    func anchor(top: NSLayoutYAxisAnchor?, leading: NSLayoutXAxisAnchor?, bottom: NSLayoutYAxisAnchor?, trailing: NSLayoutXAxisAnchor?, padding: UIEdgeInsets = .zero, size: CGSize = .zero) -> AnchoredConstraints {
+    @discardableResult func anchor(top: NSLayoutYAxisAnchor?, leading: NSLayoutXAxisAnchor?, bottom: NSLayoutYAxisAnchor?, trailing: NSLayoutXAxisAnchor?, padding: UIEdgeInsets = .zero, size: CGSize = .zero) -> AnchoredConstraints {
         
         translatesAutoresizingMaskIntoConstraints = false
         var anchoredConstraints = AnchoredConstraints()
@@ -176,8 +174,7 @@ extension UIView {
         }
     }
     
-    @discardableResult
-    func alignLeadingInSuperView(leading: NSLayoutXAxisAnchor?, paddingLeading: CGFloat = .zero) -> AnchoredConstraints {
+    @discardableResult func alignLeadingInSuperView(leading: NSLayoutXAxisAnchor?, paddingLeading: CGFloat = .zero) -> AnchoredConstraints {
         translatesAutoresizingMaskIntoConstraints = false
         
         var anchoredConstraints = AnchoredConstraints()
@@ -191,8 +188,7 @@ extension UIView {
         return anchoredConstraints
     }
     
-    @discardableResult
-    func alignTrailingInSuperView(trailing: NSLayoutXAxisAnchor?, paddingTrailing: CGFloat = .zero) -> AnchoredConstraints {
+    @discardableResult func alignTrailingInSuperView(trailing: NSLayoutXAxisAnchor?, paddingTrailing: CGFloat = .zero) -> AnchoredConstraints {
         translatesAutoresizingMaskIntoConstraints = false
         
         var anchoredConstraints = AnchoredConstraints()
