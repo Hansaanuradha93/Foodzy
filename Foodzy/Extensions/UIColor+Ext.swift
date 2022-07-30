@@ -8,7 +8,9 @@
 import UIKit
 
 enum AssertColor: String {
-    case lightAsh = "light_ash"
+    case mintGreen = "mint_green"
+    case allWhite = "all_white"
+    case almostBlack = "almost_black"
 }
 
 extension UIColor {
@@ -18,5 +20,7 @@ extension UIColor {
 }
 
 struct AppColor {
-    static let lightAsh = UIColor.appColor(color: .lightAsh)
+    static let mintGreen = UIColor.appColor(color: .mintGreen)
+    static let allWhite = UIColor.appColor(color: .allWhite)
+    static let almostBlack = UIColor.appColor(color: .almostBlack)
 }
