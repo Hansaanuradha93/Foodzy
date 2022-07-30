@@ -21,5 +21,5 @@ struct Strings {
 
 // MARK: - Fonts
 struct Fonts {
-    static let avenirNext = "Avenir Next"
+    static let avenirNext = "Montserrat"
 }
