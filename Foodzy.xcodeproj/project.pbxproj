@@ -32,6 +32,7 @@
 		47AB9BC02896766200E42089 /* FZTextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AB9BBF2896766200E42089 /* FZTextInputView.swift */; };
 		47AB9BC32896780F00E42089 /* FZTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AB9BC22896780F00E42089 /* FZTextField.swift */; };
 		47AB9BC52896B7B100E42089 /* FZRegularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AB9BC42896B7B100E42089 /* FZRegularButton.swift */; };
+		47AB9BC82896BB3200E42089 /* FZSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AB9BC72896BB3200E42089 /* FZSeparatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		47AB9BBF2896766200E42089 /* FZTextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZTextInputView.swift; sourceTree = "<group>"; };
 		47AB9BC22896780F00E42089 /* FZTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZTextField.swift; sourceTree = "<group>"; };
 		47AB9BC42896B7B100E42089 /* FZRegularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZRegularButton.swift; sourceTree = "<group>"; };
+		47AB9BC72896BB3200E42089 /* FZSeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZSeparatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		479D5AFD289531EC003B59D0 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				47AB9BC62896BB1F00E42089 /* Views */,
 				47AB9BC1289677FA00E42089 /* Text Fields */,
 				47AB9BBE2896763700E42089 /* Text Input Views */,
 				47AB9BBB2896734600E42089 /* Keyboard Handler */,
@@ -236,6 +239,14 @@
 			path = "Text Fields";
 			sourceTree = "<group>";
 		};
+		47AB9BC62896BB1F00E42089 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				47AB9BC72896BB3200E42089 /* FZSeparatorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -333,6 +344,7 @@
 			files = (
 				479D5B1F2895A409003B59D0 /* FZIconButton.swift in Sources */,
 				47AB9BC32896780F00E42089 /* FZTextField.swift in Sources */,
+				47AB9BC82896BB3200E42089 /* FZSeparatorView.swift in Sources */,
 				479D5B0D289589C0003B59D0 /* UIView+Ext.swift in Sources */,
 				47AB9BC52896B7B100E42089 /* FZRegularButton.swift in Sources */,
 				47AB9BBD2896735400E42089 /* KeyboardHandlingVC.swift in Sources */,
