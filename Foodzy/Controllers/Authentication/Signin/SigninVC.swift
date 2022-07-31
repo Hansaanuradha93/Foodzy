@@ -12,9 +12,15 @@ class SigninVC: KeyboardHandlingVC {
     // MARK: Properties
     private let contentView = UIView()
     
+    let backgroundImageView = UIImageView(image: Asserts.signinBackground)
     let titleLabel = FZSemiBoldLabel(text: "Hello again!", textColor: UIColor.appColor(color: .almostBlack))
     let gooleButton = FZIconButton(icon: Asserts.googleIcon, title: "Sign up with Google")
     let emailInputView = FZTextInputView(title: "Email", placeholderText: "example@gmail.com")
+    let passwordInputView = FZTextInputView(title: "Password", placeholderText: "**********")
+    let separatorView = FZSeparatorView()
+    let signinButton = FZRegularButton(backgroundColor: UIColor.appColor(color: .mintGreen), title: "Sign In", titleColor: .white)
+    let noAccountLabel = FZSemiBoldLabel(text: "Don't have an account?", textAlignment: .center, textColor: UIColor.appColor(color: .placeholderGray), fontSize: 16)
+    let signupButton = FZRegularButton(backgroundColor: .white, title: "Sign Up", titleColor: UIColor.appColor(color: .mintGreen), borderColor: UIColor.appColor(color: .mintGreen))
 
     // MARK: View Controller
     override func viewDidLoad() {
@@ -27,15 +33,16 @@ class SigninVC: KeyboardHandlingVC {
 // MARK: - Private Methods
 private extension SigninVC {
     
-    func setupLayout() {
-        gooleButton.setHeight(GlobalConstants.height)
-        
-        let mainStackView = UIStackView(arrangedSubviews: [titleLabel, gooleButton, emailInputView])
+    func setupLayout() {        
+        let mainStackView = UIStackView(arrangedSubviews: [titleLabel, gooleButton, emailInputView, passwordInputView, separatorView, signinButton, noAccountLabel, signupButton])
         mainStackView.axis = .vertical
+        mainStackView.spacing = 24
         mainStackView.setCustomSpacing(48, after: titleLabel)
-        mainStackView.setCustomSpacing(20, after: gooleButton)
+        mainStackView.setCustomSpacing(24, after: gooleButton)
         
-        contentView.addSubviews(mainStackView)
+        contentView.addSubviews(backgroundImageView, mainStackView)
+        
+        backgroundImageView.fillSuperview()
         
         mainStackView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 140, left: GlobalConstants.padding, bottom: 0, right: GlobalConstants.padding))
     }

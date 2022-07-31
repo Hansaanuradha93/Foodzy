@@ -44,7 +44,6 @@ private extension FZIconButton {
         self.setRoundedBorder(borderColor: borderColor, borderWidth: GlobalConstants.borderWidth, radius: GlobalConstants.cornerRadius)
         
         self.setHeight(GlobalConstants.height)
-
     }
     
     func setupLayout() {
