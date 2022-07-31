@@ -31,6 +31,7 @@
 		47AB9BBD2896735400E42089 /* KeyboardHandlingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AB9BBC2896735400E42089 /* KeyboardHandlingVC.swift */; };
 		47AB9BC02896766200E42089 /* FZTextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AB9BBF2896766200E42089 /* FZTextInputView.swift */; };
 		47AB9BC32896780F00E42089 /* FZTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AB9BC22896780F00E42089 /* FZTextField.swift */; };
+		47AB9BC52896B7B100E42089 /* FZRegularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AB9BC42896B7B100E42089 /* FZRegularButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		47AB9BBC2896735400E42089 /* KeyboardHandlingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandlingVC.swift; sourceTree = "<group>"; };
 		47AB9BBF2896766200E42089 /* FZTextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZTextInputView.swift; sourceTree = "<group>"; };
 		47AB9BC22896780F00E42089 /* FZTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZTextField.swift; sourceTree = "<group>"; };
+		47AB9BC42896B7B100E42089 /* FZRegularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZRegularButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				479D5B1E2895A409003B59D0 /* FZIconButton.swift */,
+				47AB9BC42896B7B100E42089 /* FZRegularButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				479D5B1F2895A409003B59D0 /* FZIconButton.swift in Sources */,
 				47AB9BC32896780F00E42089 /* FZTextField.swift in Sources */,
 				479D5B0D289589C0003B59D0 /* UIView+Ext.swift in Sources */,
+				47AB9BC52896B7B100E42089 /* FZRegularButton.swift in Sources */,
 				47AB9BBD2896735400E42089 /* KeyboardHandlingVC.swift in Sources */,
 				479D5B2A2895A6C8003B59D0 /* Fonts.swift in Sources */,
 				479D5AE728953055003B59D0 /* AppDelegate.swift in Sources */,
