@@ -11,20 +11,20 @@ class FZIconButton: UIView {
     
     // MARK: Properties
     private let imageView = UIImageView()
-    private let titleLabel = FZRegularLabel()
+    private let titleLabel = FZMediumLabel()
     let button = UIButton()
         
     // MARK: Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
-        createButton()
+        setupLayout()
     }
     
     required init?(coder: NSCoder) {
         fatalError(ErrorMessages.fatorError)
     }
     
-    convenience init(icon: UIImage, backgroundColor: UIColor = UIColor.appColor(color: .allWhite), title: String = "", titleColor: UIColor = .black, fontSize: CGFloat = 16, borderColor: UIColor = UIColor.appColor(color: .lightGray)) {
+    convenience init(icon: UIImage, backgroundColor: UIColor = .white, title: String = "", titleColor: UIColor = .black, fontSize: CGFloat = 16, borderColor: UIColor = UIColor.appColor(color: .lightGray)) {
         self.init(frame: .zero)
         self.setup(icon: icon, backgroundColor: backgroundColor, title: title, titleColor: titleColor, fontSize: fontSize, borderColor: borderColor)
     }
@@ -40,13 +40,11 @@ private extension FZIconButton {
         self.titleLabel.text = title
         self.titleLabel.textColor = tintColor
         self.titleLabel.font = titleLabel.font.withSize(fontSize)
-        self.layer.masksToBounds = false
-        self.clipsToBounds = true
-        self.layer.cornerRadius = GlobalConstants.cornerRadius
+
         self.setRoundedBorder(borderColor: borderColor, borderWidth: GlobalConstants.borderWidth, radius: GlobalConstants.cornerRadius)
     }
     
-    func createButton() {
+    func setupLayout() {
         addSubviews(imageView, titleLabel, button)
         
         titleLabel.centerVerticallyInSuperView()
