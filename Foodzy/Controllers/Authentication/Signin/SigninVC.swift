@@ -7,28 +7,49 @@
 
 import UIKit
 
-class SigninVC: UIViewController {
+class SigninVC: KeyboardHandlingVC {
     
+    // MARK: Properties
+    private let contentView = UIView()
+    
+    let titleLabel = FZSemiBoldLabel(text: "Hello again!", textColor: UIColor.appColor(color: .almostBlack))
     let gooleButton = FZIconButton(icon: Asserts.googleIcon, title: "Sign up with Google")
-    let facebookButton = FZIconButton(icon: Asserts.facebookIcon, title: "Sign up with Facebook")
-    let twitterButton = FZIconButton(icon: Asserts.twitterIcon, title: "Sign up with Twitter")
-    let yahooButton = FZIconButton(icon: Asserts.yahooIcon, title: "Sign up with Yahoo")
 
+    // MARK: View Controller
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBackground
-    
-        gooleButton.setHeight(GlobalConstants.height)
-        facebookButton.setHeight(GlobalConstants.height)
-        twitterButton.setHeight(GlobalConstants.height)
-        yahooButton.setHeight(GlobalConstants.height)
+        configureScrollView()
+        setupLayout()
+    }
+}
 
-        let buttonStackView = UIStackView(arrangedSubviews: [gooleButton, facebookButton, twitterButton, yahooButton])
-        buttonStackView.axis = .vertical
-        buttonStackView.spacing = 20
+// MARK: - Private Methods
+private extension SigninVC {
+    
+    func setupLayout() {
+        gooleButton.setHeight(GlobalConstants.height)
         
-        view.addSubviews(buttonStackView)
+        let mainStackView = UIStackView(arrangedSubviews: [titleLabel, gooleButton])
+        mainStackView.axis = .vertical
+        mainStackView.setCustomSpacing(48, after: titleLabel)
         
-        buttonStackView.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: GlobalConstants.padding, left: GlobalConstants.padding, bottom: 0, right: GlobalConstants.padding))
+        contentView.addSubviews(mainStackView)
+        
+        mainStackView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 140, left: GlobalConstants.padding, bottom: 0, right: GlobalConstants.padding))
+    }
+    
+    func configureScrollView() {
+        scrollView = UIScrollView()
+        scrollView.backgroundColor = .white
+        view.addSubview(scrollView)
+        scrollView.addSubview(contentView)
+        
+        scrollView.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor)
+        contentView.anchor(top: scrollView.topAnchor, leading: scrollView.leadingAnchor, bottom: scrollView.bottomAnchor, trailing: scrollView.trailingAnchor)
+        
+        NSLayoutConstraint.activate([
+            contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
+            contentView.heightAnchor.constraint(equalToConstant: 850)
+        ])
     }
 }
