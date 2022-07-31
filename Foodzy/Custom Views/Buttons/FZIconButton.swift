@@ -42,6 +42,9 @@ private extension FZIconButton {
         self.titleLabel.font = titleLabel.font.withSize(fontSize)
 
         self.setRoundedBorder(borderColor: borderColor, borderWidth: GlobalConstants.borderWidth, radius: GlobalConstants.cornerRadius)
+        
+        self.setHeight(GlobalConstants.height)
+
     }
     
     func setupLayout() {

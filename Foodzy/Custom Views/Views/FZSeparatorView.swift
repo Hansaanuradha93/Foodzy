@@ -38,5 +38,7 @@ private extension FZSeparatorView {
         addSubview(mainStackView)
         
         mainStackView.fillSuperview()
+        
+        setHeight(3)
     }
 }
