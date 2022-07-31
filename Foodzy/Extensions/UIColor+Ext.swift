@@ -12,6 +12,7 @@ enum AssertColor: String {
     case allWhite = "all_white"
     case almostBlack = "almost_black"
     case lightGray = "light-gray"
+    case placeholderGray = "placeholder_gray"
 }
 
 extension UIColor {
