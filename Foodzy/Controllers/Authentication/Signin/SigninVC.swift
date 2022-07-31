@@ -14,6 +14,7 @@ class SigninVC: KeyboardHandlingVC {
     
     let titleLabel = FZSemiBoldLabel(text: "Hello again!", textColor: UIColor.appColor(color: .almostBlack))
     let gooleButton = FZIconButton(icon: Asserts.googleIcon, title: "Sign up with Google")
+    let emailInputView = FZTextInputView(title: "Email", placeholderText: "example@gmail.com")
 
     // MARK: View Controller
     override func viewDidLoad() {
@@ -29,9 +30,10 @@ private extension SigninVC {
     func setupLayout() {
         gooleButton.setHeight(GlobalConstants.height)
         
-        let mainStackView = UIStackView(arrangedSubviews: [titleLabel, gooleButton])
+        let mainStackView = UIStackView(arrangedSubviews: [titleLabel, gooleButton, emailInputView])
         mainStackView.axis = .vertical
         mainStackView.setCustomSpacing(48, after: titleLabel)
+        mainStackView.setCustomSpacing(20, after: gooleButton)
         
         contentView.addSubviews(mainStackView)
         
