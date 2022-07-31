@@ -26,14 +26,14 @@ class FZIconButton: UIView {
     
     convenience init(icon: UIImage, backgroundColor: UIColor = .white, title: String = "", titleColor: UIColor = .black, fontSize: CGFloat = 16, borderColor: UIColor = UIColor.appColor(color: .lightGray)) {
         self.init(frame: .zero)
-        self.setup(icon: icon, backgroundColor: backgroundColor, title: title, titleColor: titleColor, fontSize: fontSize, borderColor: borderColor)
+        self.setup(icon, backgroundColor, title, titleColor, fontSize, borderColor)
     }
 }
 
 // MARK: - Private Methods
 private extension FZIconButton {
     
-    func setup(icon: UIImage, backgroundColor: UIColor, title: String, titleColor: UIColor, fontSize: CGFloat, borderColor: UIColor) {
+    func setup(_ icon: UIImage, _ backgroundColor: UIColor, _ title: String, _ titleColor: UIColor, _ fontSize: CGFloat, _ borderColor: UIColor) {
         self.imageView.image = icon
         self.imageView.contentMode = .scaleAspectFill
         self.backgroundColor = backgroundColor

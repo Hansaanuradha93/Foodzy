@@ -10,6 +10,7 @@ import UIKit
 class FZTextInputView: UIView {
     
     // MARK: Properties
+    private var isSecureTextEntry: Bool = false
     private let titleLabel = FZMediumLabel()
     var textField = FZTextField(padding: 16)
     
@@ -23,15 +24,20 @@ class FZTextInputView: UIView {
         fatalError(ErrorMessages.fatorError)
     }
     
-    convenience init(title: String, placeholderText: String) {
+    convenience init(isSecureTextEntry: Bool = false, title: String, placeholderText: String) {
         self.init(frame: .zero)
-        titleLabel.text = title
-        textField.placeholder = placeholderText
+        setup(isSecureTextEntry, title, placeholderText)
     }
 }
 
 // MARK: - Private Methods
 private extension FZTextInputView {
+    
+    func setup( _ isSecureTextEntry: Bool, _ title: String, _ placeholderText: String) {
+        titleLabel.text = title
+        textField.placeholder = placeholderText
+        textField.isSecureTextEntry = isSecureTextEntry
+    }
     
     func setupLayout() {
         textField.setHeight(GlobalConstants.height)

@@ -23,7 +23,7 @@ class FZTextField: UITextField {
     
     convenience init(background: UIColor = .white, padding: CGFloat, placeholderText: String = "", fontSize: CGFloat = 16, textColor: UIColor = UIColor.appColor(color: .almostBlack)) {
         self.init()
-        configureTextField(background: background, padding: padding, placeholderText: placeholderText, fontSize: fontSize, textColor: textColor)
+        configureTextField(background, padding, placeholderText, fontSize, textColor)
     }
     
     required init?(coder: NSCoder) {
@@ -39,7 +39,7 @@ class FZTextField: UITextField {
 // MARK: - Private Methods
 private extension FZTextField {
     
-    func configureTextField(background: UIColor, padding: CGFloat, placeholderText: String, fontSize: CGFloat, textColor: UIColor) {
+    func configureTextField(_ background: UIColor, _ padding: CGFloat, _ placeholderText: String, _ fontSize: CGFloat, _ textColor: UIColor) {
         let traits = [UIFontDescriptor.TraitKey.weight: UIFont.Weight.regular]
         var descriptor = UIFontDescriptor(fontAttributes: [UIFontDescriptor.AttributeName.family: Fonts.montserrat])
         descriptor = descriptor.addingAttributes([UIFontDescriptor.AttributeName.traits: traits])

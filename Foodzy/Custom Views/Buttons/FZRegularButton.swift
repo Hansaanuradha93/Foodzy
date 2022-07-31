@@ -20,14 +20,14 @@ class FZRegularButton: UIButton {
 
     convenience init(backgroundColor: UIColor = .white, title: String = "", titleColor: UIColor = .black, fontSize: CGFloat = 16, borderColor: UIColor = .clear, borderWidth: CGFloat = 2) {
         self.init(frame: .zero)
-        self.setup(backgroundColor: backgroundColor, title: title, titleColor: titleColor, fontSize: fontSize, borderColor: borderColor, borderWidth: borderWidth)
+        self.setup(backgroundColor, title, titleColor, fontSize, borderColor, borderWidth)
     }
 }
 
 // MARK: - Methods
 extension FZRegularButton {
        
-    private func setup(backgroundColor: UIColor, title: String, titleColor: UIColor, fontSize: CGFloat, borderColor: UIColor, borderWidth: CGFloat) {
+    private func setup(_ backgroundColor: UIColor, _ title: String, _ titleColor: UIColor, _ fontSize: CGFloat, _ borderColor: UIColor, _ borderWidth: CGFloat) {
         let traits = [UIFontDescriptor.TraitKey.weight: UIFont.Weight.medium]
         var descriptor = UIFontDescriptor(fontAttributes: [UIFontDescriptor.AttributeName.family: Fonts.montserrat])
         descriptor = descriptor.addingAttributes([UIFontDescriptor.AttributeName.traits: traits])
