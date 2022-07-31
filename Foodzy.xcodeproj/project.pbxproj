@@ -28,6 +28,7 @@
 		479D5B2A2895A6C8003B59D0 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D5B292895A6C8003B59D0 /* Fonts.swift */; };
 		479D5B2C2895A724003B59D0 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D5B2B2895A724003B59D0 /* GlobalConstants.swift */; };
 		479D5B2E2895A955003B59D0 /* ErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D5B2D2895A955003B59D0 /* ErrorMessages.swift */; };
+		47AB9BBD2896735400E42089 /* KeyboardHandlingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AB9BBC2896735400E42089 /* KeyboardHandlingVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		479D5B292895A6C8003B59D0 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		479D5B2B2895A724003B59D0 /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		479D5B2D2895A955003B59D0 /* ErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessages.swift; sourceTree = "<group>"; };
+		47AB9BBC2896735400E42089 /* KeyboardHandlingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandlingVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		479D5AFD289531EC003B59D0 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				47AB9BBB2896734600E42089 /* Keyboard Handler */,
 				479D5B202895A488003B59D0 /* Labels */,
 				479D5B1D2895A3D4003B59D0 /* Buttons */,
 			);
@@ -198,6 +201,14 @@
 				479D5B252895A563003B59D0 /* FZSemiBoldLabel.swift */,
 			);
 			path = Labels;
+			sourceTree = "<group>";
+		};
+		47AB9BBB2896734600E42089 /* Keyboard Handler */ = {
+			isa = PBXGroup;
+			children = (
+				47AB9BBC2896735400E42089 /* KeyboardHandlingVC.swift */,
+			);
+			path = "Keyboard Handler";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +308,7 @@
 			files = (
 				479D5B1F2895A409003B59D0 /* FZIconButton.swift in Sources */,
 				479D5B0D289589C0003B59D0 /* UIView+Ext.swift in Sources */,
+				47AB9BBD2896735400E42089 /* KeyboardHandlingVC.swift in Sources */,
 				479D5B2A2895A6C8003B59D0 /* Fonts.swift in Sources */,
 				479D5AE728953055003B59D0 /* AppDelegate.swift in Sources */,
 				479D5B2C2895A724003B59D0 /* GlobalConstants.swift in Sources */,
