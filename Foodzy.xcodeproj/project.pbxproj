@@ -29,6 +29,8 @@
 		479D5B2C2895A724003B59D0 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D5B2B2895A724003B59D0 /* GlobalConstants.swift */; };
 		479D5B2E2895A955003B59D0 /* ErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D5B2D2895A955003B59D0 /* ErrorMessages.swift */; };
 		47AB9BBD2896735400E42089 /* KeyboardHandlingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AB9BBC2896735400E42089 /* KeyboardHandlingVC.swift */; };
+		47AB9BC02896766200E42089 /* FZTextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AB9BBF2896766200E42089 /* FZTextInputView.swift */; };
+		47AB9BC32896780F00E42089 /* FZTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AB9BC22896780F00E42089 /* FZTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		479D5B2B2895A724003B59D0 /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		479D5B2D2895A955003B59D0 /* ErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessages.swift; sourceTree = "<group>"; };
 		47AB9BBC2896735400E42089 /* KeyboardHandlingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandlingVC.swift; sourceTree = "<group>"; };
+		47AB9BBF2896766200E42089 /* FZTextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZTextInputView.swift; sourceTree = "<group>"; };
+		47AB9BC22896780F00E42089 /* FZTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 		479D5AFD289531EC003B59D0 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				47AB9BC1289677FA00E42089 /* Text Fields */,
+				47AB9BBE2896763700E42089 /* Text Input Views */,
 				47AB9BBB2896734600E42089 /* Keyboard Handler */,
 				479D5B202895A488003B59D0 /* Labels */,
 				479D5B1D2895A3D4003B59D0 /* Buttons */,
@@ -209,6 +215,22 @@
 				47AB9BBC2896735400E42089 /* KeyboardHandlingVC.swift */,
 			);
 			path = "Keyboard Handler";
+			sourceTree = "<group>";
+		};
+		47AB9BBE2896763700E42089 /* Text Input Views */ = {
+			isa = PBXGroup;
+			children = (
+				47AB9BBF2896766200E42089 /* FZTextInputView.swift */,
+			);
+			path = "Text Input Views";
+			sourceTree = "<group>";
+		};
+		47AB9BC1289677FA00E42089 /* Text Fields */ = {
+			isa = PBXGroup;
+			children = (
+				47AB9BC22896780F00E42089 /* FZTextField.swift */,
+			);
+			path = "Text Fields";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,10 +329,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				479D5B1F2895A409003B59D0 /* FZIconButton.swift in Sources */,
+				47AB9BC32896780F00E42089 /* FZTextField.swift in Sources */,
 				479D5B0D289589C0003B59D0 /* UIView+Ext.swift in Sources */,
 				47AB9BBD2896735400E42089 /* KeyboardHandlingVC.swift in Sources */,
 				479D5B2A2895A6C8003B59D0 /* Fonts.swift in Sources */,
 				479D5AE728953055003B59D0 /* AppDelegate.swift in Sources */,
+				47AB9BC02896766200E42089 /* FZTextInputView.swift in Sources */,
 				479D5B2C2895A724003B59D0 /* GlobalConstants.swift in Sources */,
 				479D5B1228958A49003B59D0 /* Bindable.swift in Sources */,
 				479D5B0F289589DF003B59D0 /* UIColor+Ext.swift in Sources */,
