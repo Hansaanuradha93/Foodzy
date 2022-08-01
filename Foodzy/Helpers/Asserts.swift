@@ -15,4 +15,6 @@ struct Asserts {
     static let twitterIcon = UIImage(named: "twitter-icon") ?? UIImage()
     static let yahooIcon = UIImage(named: "yahoo-icon") ?? UIImage()
     static let signinBackground = UIImage(named: "signin-background") ?? UIImage()
+    static let signupBackground = UIImage(named: "signup-background") ?? UIImage()
+    static let stateChecked = UIImage(named: "state-checked") ?? UIImage()
 }
