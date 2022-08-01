@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		475CAAC4289836FC00E33EF2 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475CAAC3289836FC00E33EF2 /* SignupVC.swift */; };
+		475CAAC728983DFE00E33EF2 /* FZCheckoboxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475CAAC628983DFE00E33EF2 /* FZCheckoboxButton.swift */; };
 		479D5AE728953055003B59D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D5AE628953055003B59D0 /* AppDelegate.swift */; };
 		479D5AE928953055003B59D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D5AE828953055003B59D0 /* SceneDelegate.swift */; };
 		479D5AF028953057003B59D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 479D5AEF28953057003B59D0 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		475CAAC3289836FC00E33EF2 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
+		475CAAC628983DFE00E33EF2 /* FZCheckoboxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCheckoboxButton.swift; sourceTree = "<group>"; };
 		479D5AE328953055003B59D0 /* Foodzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodzy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		479D5AE628953055003B59D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		479D5AE828953055003B59D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 			children = (
 				479D5B1E2895A409003B59D0 /* FZIconButton.swift */,
 				47AB9BC42896B7B100E42089 /* FZRegularButton.swift */,
+				475CAAC628983DFE00E33EF2 /* FZCheckoboxButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				479D5B032895358B003B59D0 /* SigninVC.swift in Sources */,
 				479D5AE928953055003B59D0 /* SceneDelegate.swift in Sources */,
 				479D5B282895A691003B59D0 /* Strings.swift in Sources */,
+				475CAAC728983DFE00E33EF2 /* FZCheckoboxButton.swift in Sources */,
 				479D5B262895A563003B59D0 /* FZSemiBoldLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
