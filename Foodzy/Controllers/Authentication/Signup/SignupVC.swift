@@ -23,6 +23,8 @@ class SignupVC: KeyboardHandlingVC {
     let passwordInputView = FZTextInputView(isSecureTextEntry: true, title: "Password", placeholderText: "At least 8 characters")
     let separatorView = FZSeparatorView()
     
+    let agreeCheckbox = FZCheckoboxButton(icon: Asserts.stateChecked, borderColor: UIColor.appColor(color: .lightGray), borderWidth: GlobalConstants.borderWidth)
+    let termsConditionsLabel = FZSemiBoldLabel(text: "I agree with Terms and Privacy", textColor: UIColor.appColor(color: .placeholderGray), fontSize: 16)
     
     let signupButton = FZRegularButton(backgroundColor: UIColor.appColor(color: .mintGreen), title: "Sign Up", titleColor: .white)
     let alreadyHaveAccountLabel = FZSemiBoldLabel(text: "Already have an account?", textAlignment: .center, textColor: UIColor.appColor(color: .placeholderGray), fontSize: 16)
@@ -42,7 +44,14 @@ private extension SignupVC {
     func setupLayout() {
         view.backgroundColor = .systemBackground
         
-        let mainStackView = UIStackView(arrangedSubviews: [titleLabel, subtitleLabel, gooleButton, otherOptionsButton, nameInputView, emailInputView, passwordInputView, separatorView, signupButton, alreadyHaveAccountLabel, signinButton])
+        let spacer = UIView()
+        spacer.backgroundColor = .red
+        
+        let termsConditionsStackView = UIStackView(arrangedSubviews: [agreeCheckbox, termsConditionsLabel])
+        termsConditionsStackView.distribution = .fill
+        termsConditionsStackView.spacing = 16
+        
+        let mainStackView = UIStackView(arrangedSubviews: [titleLabel, subtitleLabel, gooleButton, otherOptionsButton, nameInputView, emailInputView, passwordInputView, separatorView, termsConditionsStackView, signupButton, alreadyHaveAccountLabel, signinButton])
         mainStackView.axis = .vertical
         mainStackView.spacing = 24
         mainStackView.setCustomSpacing(12, after: titleLabel)
