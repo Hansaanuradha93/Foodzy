@@ -38,7 +38,7 @@ private extension FZIconButton {
         self.imageView.contentMode = .scaleAspectFill
         self.backgroundColor = backgroundColor
         self.titleLabel.text = title
-        self.titleLabel.textColor = tintColor
+        self.titleLabel.textColor = titleColor
         self.titleLabel.font = titleLabel.font.withSize(fontSize)
 
         self.setRoundedBorder(borderColor: borderColor, borderWidth: GlobalConstants.borderWidth, radius: GlobalConstants.cornerRadius)
