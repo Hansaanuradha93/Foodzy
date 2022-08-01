@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		475CAAC4289836FC00E33EF2 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475CAAC3289836FC00E33EF2 /* SignupVC.swift */; };
 		479D5AE728953055003B59D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D5AE628953055003B59D0 /* AppDelegate.swift */; };
 		479D5AE928953055003B59D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D5AE828953055003B59D0 /* SceneDelegate.swift */; };
 		479D5AF028953057003B59D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 479D5AEF28953057003B59D0 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		475CAAC3289836FC00E33EF2 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		479D5AE328953055003B59D0 /* Foodzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodzy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		479D5AE628953055003B59D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		479D5AE828953055003B59D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		475CAAC2289836D300E33EF2 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				475CAAC3289836FC00E33EF2 /* SignupVC.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
 		479D5ADA28953055003B59D0 = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +109,10 @@
 			children = (
 				479D5AFD289531EC003B59D0 /* Custom Views */,
 				479D5AFE289531F5003B59D0 /* Controllers */,
-				479D5AFA289531C8003B59D0 /* Support Files */,
+				479D5B1528959F32003B59D0 /* Resources */,
 				479D5B1028958A40003B59D0 /* Helpers */,
 				479D5B0B28958992003B59D0 /* Extensions */,
-				479D5B1528959F32003B59D0 /* Resources */,
+				479D5AFA289531C8003B59D0 /* Support Files */,
 			);
 			path = Foodzy;
 			sourceTree = "<group>";
@@ -143,6 +153,7 @@
 		479D5B0028953559003B59D0 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				475CAAC2289836D300E33EF2 /* Signup */,
 				479D5B0128953567003B59D0 /* Signin */,
 			);
 			path = Authentication;
@@ -357,6 +368,7 @@
 				479D5B222895A4BE003B59D0 /* FZRegularLabel.swift in Sources */,
 				479D5B2E2895A955003B59D0 /* ErrorMessages.swift in Sources */,
 				479D5B1428958A92003B59D0 /* Asserts.swift in Sources */,
+				475CAAC4289836FC00E33EF2 /* SignupVC.swift in Sources */,
 				479D5B242895A521003B59D0 /* FZMediumLabel.swift in Sources */,
 				479D5B032895358B003B59D0 /* SigninVC.swift in Sources */,
 				479D5AE928953055003B59D0 /* SceneDelegate.swift in Sources */,
