@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		475CAAC4289836FC00E33EF2 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475CAAC3289836FC00E33EF2 /* SignupVC.swift */; };
 		475CAAC728983DFE00E33EF2 /* FZCheckoboxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475CAAC628983DFE00E33EF2 /* FZCheckoboxButton.swift */; };
+		4784575D289986E4001CF5A8 /* SignupOptionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4784575C289986E4001CF5A8 /* SignupOptionsVC.swift */; };
 		479D5AE728953055003B59D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D5AE628953055003B59D0 /* AppDelegate.swift */; };
 		479D5AE928953055003B59D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D5AE828953055003B59D0 /* SceneDelegate.swift */; };
 		479D5AF028953057003B59D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 479D5AEF28953057003B59D0 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		475CAAC3289836FC00E33EF2 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		475CAAC628983DFE00E33EF2 /* FZCheckoboxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCheckoboxButton.swift; sourceTree = "<group>"; };
+		4784575C289986E4001CF5A8 /* SignupOptionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupOptionsVC.swift; sourceTree = "<group>"; };
 		479D5AE328953055003B59D0 /* Foodzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodzy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		479D5AE628953055003B59D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		479D5AE828953055003B59D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,14 @@
 				475CAAC3289836FC00E33EF2 /* SignupVC.swift */,
 			);
 			path = Signup;
+			sourceTree = "<group>";
+		};
+		4784575B289986A5001CF5A8 /* Signup Options */ = {
+			isa = PBXGroup;
+			children = (
+				4784575C289986E4001CF5A8 /* SignupOptionsVC.swift */,
+			);
+			path = "Signup Options";
 			sourceTree = "<group>";
 		};
 		479D5ADA28953055003B59D0 = {
@@ -155,6 +165,7 @@
 		479D5B0028953559003B59D0 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				4784575B289986A5001CF5A8 /* Signup Options */,
 				475CAAC2289836D300E33EF2 /* Signup */,
 				479D5B0128953567003B59D0 /* Signin */,
 			);
@@ -363,6 +374,7 @@
 				47AB9BC52896B7B100E42089 /* FZRegularButton.swift in Sources */,
 				47AB9BBD2896735400E42089 /* KeyboardHandlingVC.swift in Sources */,
 				479D5B2A2895A6C8003B59D0 /* Fonts.swift in Sources */,
+				4784575D289986E4001CF5A8 /* SignupOptionsVC.swift in Sources */,
 				479D5AE728953055003B59D0 /* AppDelegate.swift in Sources */,
 				47AB9BC02896766200E42089 /* FZTextInputView.swift in Sources */,
 				479D5B2C2895A724003B59D0 /* GlobalConstants.swift in Sources */,
