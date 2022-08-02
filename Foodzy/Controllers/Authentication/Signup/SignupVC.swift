@@ -44,9 +44,6 @@ private extension SignupVC {
     func setupLayout() {
         view.backgroundColor = .systemBackground
         
-        let spacer = UIView()
-        spacer.backgroundColor = .red
-        
         let termsConditionsStackView = UIStackView(arrangedSubviews: [agreeCheckbox, termsConditionsLabel])
         termsConditionsStackView.distribution = .fill
         termsConditionsStackView.spacing = 16
