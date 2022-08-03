@@ -12,7 +12,6 @@ class FZCheckoboxButton: UIButton {
     // MARK: Properties
     private var icon: UIImage?
     private var isChecked: Bool = false
-    
     private let cornerRadius: CGFloat = 7
 
     // MARK: Initializers
