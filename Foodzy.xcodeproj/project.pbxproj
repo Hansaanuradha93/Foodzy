@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		470BDCDD289C219C002FEC96 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470BDCDC289C219C002FEC96 /* TabItem.swift */; };
+		470BDCE0289C220E002FEC96 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470BDCDF289C220E002FEC96 /* ProfileVC.swift */; };
+		470BDCE3289C223B002FEC96 /* MarketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470BDCE2289C223B002FEC96 /* MarketVC.swift */; };
+		470BDCE6289C226D002FEC96 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470BDCE5289C226D002FEC96 /* ChatVC.swift */; };
+		470BDCE8289C237C002FEC96 /* NavigationMenuBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470BDCE7289C237C002FEC96 /* NavigationMenuBaseController.swift */; };
+		470BDCEA289C23EB002FEC96 /* TabNavigationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470BDCE9289C23EB002FEC96 /* TabNavigationMenu.swift */; };
 		475CAAC4289836FC00E33EF2 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475CAAC3289836FC00E33EF2 /* SignupVC.swift */; };
 		475CAAC728983DFE00E33EF2 /* FZCheckoboxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475CAAC628983DFE00E33EF2 /* FZCheckoboxButton.swift */; };
 		4784575D289986E4001CF5A8 /* SignupOptionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4784575C289986E4001CF5A8 /* SignupOptionsVC.swift */; };
@@ -39,6 +45,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		470BDCDC289C219C002FEC96 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		470BDCDF289C220E002FEC96 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		470BDCE2289C223B002FEC96 /* MarketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketVC.swift; sourceTree = "<group>"; };
+		470BDCE5289C226D002FEC96 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		470BDCE7289C237C002FEC96 /* NavigationMenuBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationMenuBaseController.swift; sourceTree = "<group>"; };
+		470BDCE9289C23EB002FEC96 /* TabNavigationMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigationMenu.swift; sourceTree = "<group>"; };
 		475CAAC3289836FC00E33EF2 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		475CAAC628983DFE00E33EF2 /* FZCheckoboxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCheckoboxButton.swift; sourceTree = "<group>"; };
 		4784575C289986E4001CF5A8 /* SignupOptionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupOptionsVC.swift; sourceTree = "<group>"; };
@@ -83,6 +95,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		470BDCDB289C218E002FEC96 /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				470BDCDC289C219C002FEC96 /* TabItem.swift */,
+				470BDCE7289C237C002FEC96 /* NavigationMenuBaseController.swift */,
+				470BDCE9289C23EB002FEC96 /* TabNavigationMenu.swift */,
+			);
+			path = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		470BDCDE289C21F2002FEC96 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				470BDCDF289C220E002FEC96 /* ProfileVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		470BDCE1289C2226002FEC96 /* Market */ = {
+			isa = PBXGroup;
+			children = (
+				470BDCE2289C223B002FEC96 /* MarketVC.swift */,
+			);
+			path = Market;
+			sourceTree = "<group>";
+		};
+		470BDCE4289C225F002FEC96 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				470BDCE5289C226D002FEC96 /* ChatVC.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 		475CAAC2289836D300E33EF2 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +190,7 @@
 		479D5AFD289531EC003B59D0 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				470BDCDB289C218E002FEC96 /* Tab Bar */,
 				47AB9BC62896BB1F00E42089 /* Views */,
 				47AB9BC1289677FA00E42089 /* Text Fields */,
 				47AB9BBE2896763700E42089 /* Text Input Views */,
@@ -157,6 +204,9 @@
 		479D5AFE289531F5003B59D0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				470BDCE4289C225F002FEC96 /* Chat */,
+				470BDCE1289C2226002FEC96 /* Market */,
+				470BDCDE289C21F2002FEC96 /* Profile */,
 				479D5B0028953559003B59D0 /* Authentication */,
 			);
 			path = Controllers;
@@ -368,10 +418,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				479D5B1F2895A409003B59D0 /* FZIconButton.swift in Sources */,
+				470BDCE8289C237C002FEC96 /* NavigationMenuBaseController.swift in Sources */,
 				47AB9BC32896780F00E42089 /* FZTextField.swift in Sources */,
 				47AB9BC82896BB3200E42089 /* FZSeparatorView.swift in Sources */,
+				470BDCEA289C23EB002FEC96 /* TabNavigationMenu.swift in Sources */,
 				479D5B0D289589C0003B59D0 /* UIView+Ext.swift in Sources */,
 				47AB9BC52896B7B100E42089 /* FZRegularButton.swift in Sources */,
+				470BDCE0289C220E002FEC96 /* ProfileVC.swift in Sources */,
+				470BDCDD289C219C002FEC96 /* TabItem.swift in Sources */,
 				47AB9BBD2896735400E42089 /* KeyboardHandlingVC.swift in Sources */,
 				479D5B2A2895A6C8003B59D0 /* Fonts.swift in Sources */,
 				4784575D289986E4001CF5A8 /* SignupOptionsVC.swift in Sources */,
@@ -379,9 +433,11 @@
 				47AB9BC02896766200E42089 /* FZTextInputView.swift in Sources */,
 				479D5B2C2895A724003B59D0 /* GlobalConstants.swift in Sources */,
 				479D5B1228958A49003B59D0 /* Bindable.swift in Sources */,
+				470BDCE3289C223B002FEC96 /* MarketVC.swift in Sources */,
 				479D5B0F289589DF003B59D0 /* UIColor+Ext.swift in Sources */,
 				479D5B222895A4BE003B59D0 /* FZRegularLabel.swift in Sources */,
 				479D5B2E2895A955003B59D0 /* ErrorMessages.swift in Sources */,
+				470BDCE6289C226D002FEC96 /* ChatVC.swift in Sources */,
 				479D5B1428958A92003B59D0 /* Asserts.swift in Sources */,
 				475CAAC4289836FC00E33EF2 /* SignupVC.swift in Sources */,
 				479D5B242895A521003B59D0 /* FZMediumLabel.swift in Sources */,
