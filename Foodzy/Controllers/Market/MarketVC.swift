@@ -14,5 +14,4 @@ class MarketVC: UIViewController {
 
         view.backgroundColor = .blue
     }
-
 }

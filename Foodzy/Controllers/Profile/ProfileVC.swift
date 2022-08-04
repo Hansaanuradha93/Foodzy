@@ -14,5 +14,4 @@ class ProfileVC: UIViewController {
 
         view.backgroundColor = .red
     }
-
 }
