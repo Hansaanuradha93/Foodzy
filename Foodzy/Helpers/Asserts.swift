@@ -9,6 +9,14 @@ import UIKit
 
 struct Asserts {
     
+    // Tab Bar
+    static let chatIcon = UIImage(named: "chat-icon") ?? UIImage()
+    static let chatSelectedIcon = UIImage(named: "chat-selected-icon") ?? UIImage()
+    static let marketIcon = UIImage(named: "market-icon") ?? UIImage()
+    static let marketSelectedIcon = UIImage(named: "maket-selected-icon") ?? UIImage()
+    static let profileIcon = UIImage(named: "profile-icon") ?? UIImage()
+    static let profileSelectedIcon = UIImage(named: "profile-selected-icon") ?? UIImage()
+    
     // Authentication
     static let facebookIcon = UIImage(named: "facebook-icon") ?? UIImage()
     static let googleIcon = UIImage(named: "google-icon") ?? UIImage()
