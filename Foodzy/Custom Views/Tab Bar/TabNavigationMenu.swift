@@ -9,9 +9,12 @@ import UIKit
 
 class TabNavigationMenu: UIView {
     
+    // MARK: Properties
     var itemTapped: ((_ tab: Int) -> Void)?
     var activeItem: Int = 0
+    var tabBarItems: [TabBarItem] = []
     
+    // MARK: Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -22,7 +25,19 @@ class TabNavigationMenu: UIView {
     
     convenience init(menuItems: [TabItem], frame: CGRect) {
         self.init(frame: frame)
-        self.layer.backgroundColor = UIColor.white.cgColor
+        setupLayout(menuItems, frame)
+        
+        setNeedsLayout()
+        layoutIfNeeded()
+        activateTab(tab: 0)
+    }
+}
+
+// MARK: - Helper Methods
+private extension TabNavigationMenu {
+    
+    func setupLayout(_ menuItems: [TabItem], _ frame: CGRect) {
+        layer.backgroundColor = UIColor.white.cgColor
         
         for i in 0 ..< menuItems.count {
             let itemWidth = self.frame.width / CGFloat(menuItems.count)
@@ -37,52 +52,43 @@ class TabNavigationMenu: UIView {
             }
             itemView.clipsToBounds = true
             itemView.tag = i
-                        
+            
+            self.tabBarItems.append(itemView)
+            
             self.addSubview(itemView)
             
             itemView.anchor(top: topAnchor, leading: leadingAnchor, bottom: nil, trailing: nil, padding: .init(top: 0, left: leadingSpace, bottom: 0, right: 0), size: .init(width: 0, height: frame.height))
         }
-        
-        self.setNeedsLayout()
-        self.layoutIfNeeded()
-        self.activateTab(tab: 0)
     }
     
     func switchTab(from: Int, to: Int) {
-        self.deactivateTab(tab: from)
-        self.activateTab(tab: to)
+        deactivateTab(tab: from)
+        activateTab(tab: to)
     }
     
     func activateTab(tab: Int) {
-        let tabToActivate = self.subviews[tab]
-        let borderWidth = tabToActivate.frame.size.width - 20
+        let tabBatItem = tabBarItems[tab]
         
-        let borderLayer = CALayer()
-        borderLayer.backgroundColor = UIColor.appColor(color: .mintGreen).cgColor
-        borderLayer.name = "active border"
-        borderLayer.frame = CGRect(x: 10, y: 0, width: borderWidth, height: 2)
-        
-        DispatchQueue.main.async {
-            UIView.animate(withDuration: 0.8, delay: 0.0, options: [.curveEaseIn, .allowUserInteraction], animations: {
-                tabToActivate.layer.addSublayer(borderLayer)
-                tabToActivate.setNeedsLayout()
-                tabToActivate.layoutIfNeeded()
-            })
-            self.itemTapped?(tab)
+        if tab == 0 {
+            tabBatItem.itemIconView.image = Asserts.profileSelectedIcon
+        } else if tab == 1 {
+            tabBatItem.itemIconView.image = Asserts.marketSelectedIcon
+        } else if tab == 2 {
+            tabBatItem.itemIconView.image = Asserts.chatSelectedIcon
         }
+        
         self.activeItem = tab
     }
     
     func deactivateTab(tab: Int) {
-        let inactiveTab = self.subviews[tab]
-        let layersToRemove = inactiveTab.layer.sublayers?.filter({ $0.name == "active border" })
+        let tabBatItem = tabBarItems[tab]
         
-        DispatchQueue.main.async {
-            UIView.animate(withDuration: 0.4, delay: 0.0, options: [.curveEaseIn, .allowUserInteraction], animations: {
-                layersToRemove?.forEach({ $0.removeFromSuperlayer() })
-                inactiveTab.setNeedsLayout()
-                inactiveTab.layoutIfNeeded()
-            })
+        if tab == 0 {
+            tabBatItem.itemIconView.image = Asserts.profileIcon
+        } else if tab == 1 {
+            tabBatItem.itemIconView.image = Asserts.marketIcon
+        } else if tab == 2 {
+            tabBatItem.itemIconView.image = Asserts.chatIcon
         }
     }
 }
