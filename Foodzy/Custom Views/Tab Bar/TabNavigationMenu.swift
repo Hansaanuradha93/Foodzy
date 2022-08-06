@@ -26,7 +26,6 @@ class TabNavigationMenu: UIView {
     convenience init(menuItems: [TabItem], frame: CGRect) {
         self.init(frame: frame)
         setupLayout(menuItems, frame)
-        
         setNeedsLayout()
         layoutIfNeeded()
         activateTab(tab: 0)
