@@ -43,11 +43,11 @@ private extension TabBarItem {
         itemIconView.image = item.icon.withRenderingMode(.automatic)
         itemIconView.clipsToBounds = true
         
-        self.layer.backgroundColor = UIColor.white.cgColor
-        self.addSubview(itemIconView)
-        self.clipsToBounds = true
+        layer.backgroundColor = UIColor.white.cgColor
+        addSubview(itemIconView)
+        clipsToBounds = true
         
-        itemIconView.anchor(top: self.topAnchor, leading: self.leadingAnchor, bottom: nil, trailing: nil, padding: .init(top: 8, left: 35, bottom: 0, right: 0), size: .init(width: 25, height: 25))
+        itemIconView.anchor(top: self.topAnchor, leading: self.leadingAnchor, bottom: nil, trailing: nil, padding: .init(top: 8, left: 35, bottom: 0, right: 0), size: .init(width: 50, height: 50))
         itemIconView.centerHorizontally(in: self)
         
         self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.handleTap)))

@@ -25,7 +25,7 @@ enum TabItem: String, CaseIterable {
                 
             case .chat:
                 return ChatVC()
-            }
+        }
     }
     
     var icon: UIImage {
