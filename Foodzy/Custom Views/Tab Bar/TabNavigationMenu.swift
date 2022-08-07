@@ -49,6 +49,7 @@ private extension TabNavigationMenu {
                 }
                 self.switchTab(from: self.activeItem, to: tag)
             }
+            
             itemView.clipsToBounds = true
             itemView.tag = i
             
