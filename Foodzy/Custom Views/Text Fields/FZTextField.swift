@@ -30,6 +30,7 @@ class FZTextField: UITextField {
         fatalError(ErrorMessages.fatorError)
     }
     
+    // MARK: Overriden Methods
     override func layoutSubviews() {
         super.layoutSubviews()
         self.setRoundedBorder(borderColor: UIColor.appColor(color: .lightGray), borderWidth: GlobalConstants.borderWidth, radius: GlobalConstants.cornerRadius)
