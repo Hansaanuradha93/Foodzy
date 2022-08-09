@@ -57,7 +57,7 @@ private extension TabNavigationMenu {
             
             self.addSubview(itemView)
             
-            itemView.anchor(top: topAnchor, leading: leadingAnchor, bottom: nil, trailing: nil, padding: .init(top: 0, left: leadingSpace, bottom: 0, right: 0), size: .init(width: 0, height: frame.height))
+            itemView.anchor(top: topAnchor, leading: leadingAnchor, bottom: bottomAnchor, trailing: nil, padding: .init(top: 0, left: leadingSpace, bottom: 0, right: 0))
         }
     }
     
