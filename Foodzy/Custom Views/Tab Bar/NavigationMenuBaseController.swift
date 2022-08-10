@@ -45,7 +45,7 @@ private extension NavigationMenuBaseController {
         
         view.addSubview(customTabBar)
         
-        customTabBar.anchor(top: nil, leading: tabBar.leadingAnchor, bottom: tabBar.bottomAnchor, trailing: tabBar.trailingAnchor, size: .init(width: tabBar.frame.width, height: tabBarHeight))
+        customTabBar.anchor(top: nil, leading: tabBar.leadingAnchor, bottom: tabBar.bottomAnchor, trailing: tabBar.trailingAnchor, size: .init(width: 0, height: tabBarHeight))
         
         for i in 0 ..< items.count {
             controllers.append(items[i].viewController)
