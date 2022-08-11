@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NavigationMenuBaseController: UITabBarController {
+class FZTabBar: UITabBarController {
     
     // MARK: Properties
     var customTabBar: TabNavigationMenu!
@@ -21,7 +21,7 @@ class NavigationMenuBaseController: UITabBarController {
 }
 
 // MARK: - Helper Methods
-private extension NavigationMenuBaseController {
+private extension FZTabBar {
     
     func loadTabBar() {
         let tabItems: [TabItem] = [.profile, .market, .chat]
