@@ -17,7 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        let controller = NavigationMenuBaseController()
+        let controller = FZTabBar()
         window?.rootViewController = controller
         window?.makeKeyAndVisible()
     }
