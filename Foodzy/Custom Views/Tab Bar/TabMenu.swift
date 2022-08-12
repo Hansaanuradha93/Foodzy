@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TabNavigationMenu: UIView {
+class TabMenu: UIView {
     
     // MARK: Properties
     var itemTapped: ((_ tab: Int) -> Void)?
@@ -33,7 +33,7 @@ class TabNavigationMenu: UIView {
 }
 
 // MARK: - Helper Methods
-private extension TabNavigationMenu {
+private extension TabMenu {
     
     func setupLayout(_ menuItems: [TabItem], _ frame: CGRect) {
         layer.backgroundColor = UIColor.white.cgColor
