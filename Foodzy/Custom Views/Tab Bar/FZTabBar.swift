@@ -10,7 +10,7 @@ import UIKit
 class FZTabBar: UITabBarController {
     
     // MARK: Properties
-    var customTabBar: TabNavigationMenu!
+    var customTabBar: TabMenu!
     var tabBarHeight: CGFloat = 80
     
     // MARK: View Controller
@@ -39,7 +39,7 @@ private extension FZTabBar {
         
         tabBar.isHidden = true
         
-        customTabBar = TabNavigationMenu(menuItems: items, frame: frame)
+        customTabBar = TabMenu(menuItems: items, frame: frame)
         customTabBar.clipsToBounds = true
         customTabBar.itemTapped = self.changeTab
         

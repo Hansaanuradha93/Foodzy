@@ -12,7 +12,7 @@
 		470BDCE3289C223B002FEC96 /* MarketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470BDCE2289C223B002FEC96 /* MarketVC.swift */; };
 		470BDCE6289C226D002FEC96 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470BDCE5289C226D002FEC96 /* ChatVC.swift */; };
 		470BDCE8289C237C002FEC96 /* FZTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470BDCE7289C237C002FEC96 /* FZTabBar.swift */; };
-		470BDCEA289C23EB002FEC96 /* TabNavigationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470BDCE9289C23EB002FEC96 /* TabNavigationMenu.swift */; };
+		470BDCEA289C23EB002FEC96 /* TabMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470BDCE9289C23EB002FEC96 /* TabMenu.swift */; };
 		470BDCEC289C39A5002FEC96 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470BDCEB289C39A5002FEC96 /* TabBarItem.swift */; };
 		475CAAC4289836FC00E33EF2 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475CAAC3289836FC00E33EF2 /* SignupVC.swift */; };
 		475CAAC728983DFE00E33EF2 /* FZCheckoboxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475CAAC628983DFE00E33EF2 /* FZCheckoboxButton.swift */; };
@@ -51,7 +51,7 @@
 		470BDCE2289C223B002FEC96 /* MarketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketVC.swift; sourceTree = "<group>"; };
 		470BDCE5289C226D002FEC96 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		470BDCE7289C237C002FEC96 /* FZTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZTabBar.swift; sourceTree = "<group>"; };
-		470BDCE9289C23EB002FEC96 /* TabNavigationMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigationMenu.swift; sourceTree = "<group>"; };
+		470BDCE9289C23EB002FEC96 /* TabMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenu.swift; sourceTree = "<group>"; };
 		470BDCEB289C39A5002FEC96 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		475CAAC3289836FC00E33EF2 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		475CAAC628983DFE00E33EF2 /* FZCheckoboxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FZCheckoboxButton.swift; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 			children = (
 				470BDCDC289C219C002FEC96 /* TabItem.swift */,
 				470BDCE7289C237C002FEC96 /* FZTabBar.swift */,
-				470BDCE9289C23EB002FEC96 /* TabNavigationMenu.swift */,
+				470BDCE9289C23EB002FEC96 /* TabMenu.swift */,
 				470BDCEB289C39A5002FEC96 /* TabBarItem.swift */,
 			);
 			path = "Tab Bar";
@@ -424,7 +424,7 @@
 				470BDCE8289C237C002FEC96 /* FZTabBar.swift in Sources */,
 				47AB9BC32896780F00E42089 /* FZTextField.swift in Sources */,
 				47AB9BC82896BB3200E42089 /* FZSeparatorView.swift in Sources */,
-				470BDCEA289C23EB002FEC96 /* TabNavigationMenu.swift in Sources */,
+				470BDCEA289C23EB002FEC96 /* TabMenu.swift in Sources */,
 				479D5B0D289589C0003B59D0 /* UIView+Ext.swift in Sources */,
 				47AB9BC52896B7B100E42089 /* FZRegularButton.swift in Sources */,
 				470BDCE0289C220E002FEC96 /* ProfileVC.swift in Sources */,
