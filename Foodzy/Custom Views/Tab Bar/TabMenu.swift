@@ -43,15 +43,15 @@ private extension TabMenu {
             let leadingSpace = itemWidth * CGFloat(i)
             
             let itemView = TabBarItem(item: menuItems[i])
+            itemView.clipsToBounds = true
+            itemView.tag = i
+            
             itemView.action = { [weak self] tag in
                 guard let self = self else {
                     return
                 }
                 self.switchTab(from: self.activeItem, to: tag)
             }
-            
-            itemView.clipsToBounds = true
-            itemView.tag = i
             
             self.tabBarItems.append(itemView)
             
