@@ -53,9 +53,9 @@ private extension TabMenu {
                 self.switchTab(from: self.activeItem, to: tag)
             }
             
-            self.tabBarItems.append(itemView)
+            tabBarItems.append(itemView)
             
-            self.addSubview(itemView)
+            addSubview(itemView)
             
             itemView.anchor(top: topAnchor, leading: leadingAnchor, bottom: bottomAnchor, trailing: nil, padding: .init(top: 0, left: leadingSpace, bottom: 0, right: 0))
         }
