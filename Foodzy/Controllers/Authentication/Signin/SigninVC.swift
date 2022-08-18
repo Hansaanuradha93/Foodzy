@@ -13,11 +13,13 @@ class SigninVC: KeyboardHandlingVC {
     private let contentView = UIView()
     
     let backgroundImageView = UIImageView(image: Asserts.signinBackground)
+    
     let titleLabel = FZSemiBoldLabel(text: "Hello again!", textColor: UIColor.appColor(color: .almostBlack))
     let gooleButton = FZIconButton(icon: Asserts.googleIcon, title: "Sign up with Google")
     let emailInputView = FZTextInputView(title: "Email", placeholderText: "example@gmail.com")
     let passwordInputView = FZTextInputView(isSecureTextEntry: true, title: "Password", placeholderText: "**********")
     let separatorView = FZSeparatorView()
+    
     let signinButton = FZRegularButton(backgroundColor: UIColor.appColor(color: .mintGreen), title: "Sign In", titleColor: .white)
     let noAccountLabel = FZSemiBoldLabel(text: "Don't have an account?", textAlignment: .center, textColor: UIColor.appColor(color: .placeholderGray), fontSize: 16)
     let signupButton = FZRegularButton(backgroundColor: .white, title: "Sign Up", titleColor: UIColor.appColor(color: .mintGreen), borderColor: UIColor.appColor(color: .mintGreen))
